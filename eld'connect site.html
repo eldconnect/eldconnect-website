@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eld'Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        body, h1, h2, h3, p, button {
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+        }
+        body {
+            background:#fbf2e1;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #dd6c30;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+        nav a:hover {
+            color: #dd6c30;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 400px;
+            background-image: url('hero-image.jpg'); /* Replace with an actual image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background-color: #fbf2e1;
+            padding: 15px 30px;
+            border: none;
+            font-size: 18px;
+            color: black;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #dd6c30;
+        }
+
+        /* Section Layout */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .button-primary {
+            background-color: #dd6c30;
+            padding: 10px 20px;
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+        .button-primary:hover {
+            background-color: #dd6c30;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #dd6c30;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #dd6c30;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #dd6c30;
+        }
+
+        /* Sign In Form */
+        .sign-in-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .sign-in-form input {
+            margin-bottom: 15px;
+            padding: 12px;
+            font-size: 16px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#sign-in">Sign In</a>
+    </nav>
+
+    <!-- Home Page (Hero Banner) -->
+    <section id="home" class="hero">
+        <div>
+            <h1>Eld'connect by Change Pact Monaco</h1>
+            <button>Learn More</button>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="eld conect.png" alt="Eld Connect" width="300">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About us</h2>
+        <p>We are three students from the Lycée Albert 1er in Monaco, and through the Change Pact initiative, we have developed a project aimed at fostering connections between generations. Our project focuses on helping seniors connect with volunteers, creating meaningful opportunities for interaction, companionship, and mutual support. By bridging the gap between young volunteers and elderly participants, our project encourages intergenerational exchange, strengthens community bonds, and promotes social inclusion for seniors. </p>
+            <div>
+        <h2>Our team</h2>
+            <p>Léna Stasio</p>
+            <p>Federico Marini</p>
+            <p>Emma Garcia</p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="mailto:ed.connect.monaco@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <input type="text" name="Subject" placeholder="Subject" required>
+            <textarea name="Message" rows="4" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+        </form>
+        <div>
+            <p>
+            </p>
+            <p><strong>Email:</strong> eld.connect.monaco2025@gmail.com</p>
+        </div>
+        <div>
+            <h3>Find Us On The Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.224301086089!2d7.429149125281556!3d43.74743874633204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc27a34bbfe99%3A0x95d6214d49a9e52a!2sL&#39;Annonciade%2C%2098000%20Monaco!5e0!3m2!1sfr!2s!4v1765896042584!5m2!1sfr!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p> </p>
+        </div>
+    </section>
+
+    <!-- Sign In Page -->
+    <section id="sign-in">
+        <h2>Sign In</h2>
+        <div class="sign-in-form">
+            <input type="email" placeholder="Email" required>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0Mm3Js2inCAZ3q_g9YUiFijftTqE2Cho2s0GFaFWBY-7KzQ/viewform?usp=dialog"
+            target="_blank"
+            class="button-primary">
+            Sign In
+         </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Eld'Connect. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
